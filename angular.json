@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/presupuesto-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -49,6 +50,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -131,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "presupuesto-app"
+  "defaultProject": "presupuesto-app",
+  "cli": {
+    "analytics": "fa28398a-7150-41b9-813f-38bad7d7dc38"
+  }
 }

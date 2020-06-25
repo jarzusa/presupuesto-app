@@ -1,5 +1,7 @@
 import { Ingreso } from './ingreso.model';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class IngresoServicio {
     constructor() {
 
